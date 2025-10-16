@@ -83,7 +83,7 @@ while (fahr <= limit) { //wykonuj petle dopoki wartosc fahr jest <=od zmiennej l
 
 	for (fahr = 0.0; fahr <= limit; fahr = fahr + krok) //kod 02_16
 		{
-		float celsius = (5.0 / 9.0)*(fahr - 32.0);
+		float celsius = (5 / 9)*(fahr - 32.0);
 		printf("%3.0f %6.1f \n", fahr, celsius);
 		}
 
