@@ -73,7 +73,7 @@ while (fahr <= limit) { //wykonuj petle dopoki wartosc fahr jest <=od zmiennej l
 		fahr = fahr + krok;
 	}
 */
-
+/*
 //ZAD.5
 	float fahr, celsius, limit, krok;
 
@@ -83,9 +83,191 @@ while (fahr <= limit) { //wykonuj petle dopoki wartosc fahr jest <=od zmiennej l
 
 	for (fahr = 0.0; fahr <= limit; fahr = fahr + krok) //kod 02_16
 		{
-		float celsius = (5 / 9)*(fahr - 32.0);
+		float celsius = (5 / 9)*(fahr - 32.0);   // wszystkie wartosci po przeliczeniu wychodza jako  0
 		printf("%3.0f %6.1f \n", fahr, celsius);
 		}
+*/
+	//ZAD.7
+/*
+	int liczba;
+
+	for (int i = 1; i <= 10; ++i) {
+
+		cout << "Podaj liczbe rzeczywista (" << i << "/10): ";
+		cin >> liczba;
+
+		if (liczba > 0) {
+			cout << "Liczba dodatnia: " << liczba << endl;
+		}
+	}
+
+*/
+//ZAD.8
+	/*
+	int i;
+
+	for (i = 2; i <= 100; i += 2) {
+		cout << i << endl; }
+	*/
+
+//ZAD.9
+/*
+ 
+int i, n;
+
+cout << "Podaj liczbe ";
+cin >> n;
+
+for (i = 1; i <= 100; i++) {
+	
+	if (i % n == 0) {
+		cout << i << endl;
+	}
+}
+*/
+
+//ZAD.10
+/*
+int i, n;
+int a = 0;
+
+cout << "Podaj liczbe ";
+cin >> n;
+
+for (i = 1; i <= 100; i++) {
+
+	if (i % n == 0) {
+		a++;
+	}
+}
+	cout << "Liczb podzielnych przez " << n << " jest: " << a << endl;
+*/
+
+//ZAD.11
+/*
+int a, b, i;
+
+cout << "Podaj wartosc a: ";
+cin >> a;
+cout << endl;
+
+cout << "Podaj wartosc b: ";
+cin >> b;
+cout << endl;
+
+if (a < b) {
+	for (i = a; i <= b; i++) {
+		if (i % 3 == 0) {
+			cout << i << endl;
+		}
+	}
+}
+else {
+	for (i = b; i <= a; i++) {
+		if (i % 3 == 0) {
+			cout << i << endl;
+		}
+	}
+}
+*/
+
+//ZAD.12
+/*
+int i, n;
+double suma=0, a;
+
+cout << "Podaj ilosc liczb: ";
+cin >> n;
+cout << endl;
+
+if (n > 1) {
+	for (i = 1; i <= n; i++) {
+		cout << "Podaj wartosc: ";
+		cin >> a;
+
+		suma += a;
+	}
+
+	cout << "srednia arytmetyczna to " << suma / n;
+}
+
+*/
+
+//ZAD.13
+/*
+int i;
+
+for (i = 100; i >= 0; i--)
+cout << i << endl;
+*/
+
+//ZAD.14
+
+/*
+int a, b, c;
+
+cout << "Wprowadz wartosc a ";
+cin >> a;
+cout << endl;
+
+cout << "Wprowadz wartosc b ";
+cin >> b;
+cout << endl;
+
+cout << "Wprowadz wartosc c ";
+cin >> c;
+cout << endl;
+
+if (a <= b && a <= c) 
+	cout << "najmniejsza wartosc to " << a;
+else {
+	if (b <= a && b <= c)
+		cout << "najmniejsza wartosc to " << b;
+	else {
+		if (c <= b && c <= a)
+			cout << "najmniejsza wartosc to " << c;
+	}
+}
+*/
+
+//ZAD.15
+/*
+#include <cstdlib>
+int n, m, los, i;
+
+cout << "podaj ilosc liczb ";
+cin >> n;
+cout << endl;
+
+cout << "podaj zakres od 0 do ";
+cin >> m;
+cout << endl;
+
+for (i = 1; i <= n; i++) {
+
+	los = rand() % m + 0;
+	cout << "liczba losowa to " << los << endl;
+
+}
+*/
+
+//ZAD.16
+/*
+#include <cstdlib>
+int los, i, wylosowana=0, trafienia=0;
+
+
+	los = rand() % 10 + 1;
+	cout << "szczesliwy numerek to " << los << endl;
+
+
+	for (i = 1; i <= 10; ++i) {
+		int wylosowana = rand() % 10 + 1;
+		cout << "Losowa liczba " << i << ": " << wylosowana << endl;
+			if (wylosowana == los) ++trafienia;
+	}
+		cout << "Szczesliwy numerek pojawil sie " << trafienia << " razy." << endl;
+*/
 
 	return 0;
 }
